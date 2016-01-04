@@ -35,9 +35,11 @@
 
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+   <!-- <link rel="stylesheet" type="text/css" href="../static/vendor/twitter-bootstrap/less/bootstrap.less">-->
+    
     
 </head>
-<body>
+<body style="padding-top:50px;">
 	<!-- Menu -->
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
