@@ -90,10 +90,22 @@
 
 		<!-- Footer -->
 		<footer>
-			<p class="pull-left">&copy; Company <%- (new Date()).getFullYear() %></p>
+        <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <a class="email" href="mailto:corypcole@gmail.com">
+                     <i class="fa fa-envelope-o"></i>   
+                     </a> 
+                </li>
+            </ul>
+			<p class="pull-left">&copy; Cory Cole <%- (new Date()).getFullYear() %></p>
 			<p class="pull-right">
 				This website was last updated at <%= @site.date.toISOString() %>
 			</p>
+            
+            </div>
+         </div>
 		</footer>
 	<!--</div><!-- /container cc removed container to expand jumbotron-->
 
