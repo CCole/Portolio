@@ -9,4 +9,11 @@ dynamic: true
 	<p>
 		Ooops! It looks like the document you requested at <code><%= @req.url %></code> couldn't be found.
 	</p>
+    
+   <p>
+    There's only one explantion for this...
+    
+    </p>
+    
+    <img src="/images/aliens-baby.jpg">
 </div>
