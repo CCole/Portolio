@@ -5,6 +5,7 @@ pageOrder: 2
 ---
 
 <nav class="linklist">
+<!-Add this code to a partial and insert into about page --> 
 	<% for document in @getCollection('posts').toJSON(): %>
 		<li><span><%= document.date.toDateString() %></span>
 		&raquo;
