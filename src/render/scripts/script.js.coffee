@@ -10,4 +10,6 @@ randomQuote = quotes[indx]
 $('#RndQuote').html randomQuote
 
 
+projects = getCollection(files.projects); 
+
 

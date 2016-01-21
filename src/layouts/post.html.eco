@@ -5,14 +5,6 @@ layout: default
 <article id="post" class="post">
 
 
-<!- Trying out iterating over a collection of files --> 
-<% for project in @getFilesAtPath("../render/projects", [filename: 1]): %>
-    
-   <div> <%=project.toHTML %> </div>
-    <!-<a href="<%= post.url %>"><%= post.title %></a>-->
-   
-<% end %>
-<!- End of Trying to iterate over a collection -->
 
 
 

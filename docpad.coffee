@@ -77,8 +77,7 @@ docpadConfig = {
 		# Get the prepared site/document keywords
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
-			@site.keywords.concat(@document.keywords or []).join(', ')
-
+			@site.keywords.concat(@document.keywords or []).joingetFilesAtPath
        
 	# =================================
 	# Collections
@@ -91,7 +90,8 @@ docpadConfig = {
 		posts: (database) ->
 			database.findAllLive({tags:$has:'post'}, [date:-1])
             
- 
+        
+
 
 
 	# =================================

@@ -47,6 +47,10 @@
 
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+    
+    <!-- TypeKit -->
+    <script src="https://use.typekit.net/xqk8ysb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
    
     
     
