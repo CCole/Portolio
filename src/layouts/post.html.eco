@@ -3,8 +3,22 @@ layout: default
 ---
 
 <article id="post" class="post">
+
+
+<!- Trying out iterating over a collection of files --> 
+<% for post in @getFilesAtPath("../render/projects", [filename: 1]): %>
+    <% console.log post.title %>
+    <a href="<%= post.url %>"><%= post.title %></a>
+  
+<% end %>
+<!- End of Trying to iterate over a collection -->
+
+
+
 	<h1><%= @document.title %></h1>
 	<div class="post-content"><%- @content %></div>
+    
+    
 </article>
 
 <footer>
