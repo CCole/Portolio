@@ -8,7 +8,7 @@ pageOrder: 2
 	<% for document in @getCollection('posts').toJSON(): %>
 		<li><span><%= document.date.toDateString() %></span>
 		&raquo;
-		<a href="<%= document.url %>"><%= document.title %></a></li>
+		><%- document.contentRendered %> </li>
 	<% end %>
     
    
