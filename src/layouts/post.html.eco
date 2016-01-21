@@ -6,10 +6,11 @@ layout: default
 
 
 <!- Trying out iterating over a collection of files --> 
-<% for post in @getFilesAtPath("../render/projects", [filename: 1]): %>
-    <% console.log post.title %>
-    <a href="<%= post.url %>"><%= post.title %></a>
-  
+<% for project in @getFilesAtPath("../render/projects", [filename: 1]): %>
+    
+   <div> <%=project.toHTML %> </div>
+    <!-<a href="<%= post.url %>"><%= post.title %></a>-->
+   
 <% end %>
 <!- End of Trying to iterate over a collection -->
 
