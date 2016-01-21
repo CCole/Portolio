@@ -79,7 +79,7 @@ docpadConfig = {
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
-
+       
 	# =================================
 	# Collections
 	# These are special collections that our website makes available to us
@@ -90,6 +90,11 @@ docpadConfig = {
 
 		posts: (database) ->
 			database.findAllLive({tags:$has:'post'}, [date:-1])
+            
+       #=================================
+       #Test
+       projects: (database) ->
+            database.findAllLive({tags:$has:'project'})
 
 
 	# =================================
