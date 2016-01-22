@@ -90,6 +90,11 @@
 		<!-- Content -->
 		<section id="content" class="content">
 			<%- @content %>
+           <% for document in @getCollection('posts').toJSON(): %>
+		<li><span><%= document.date.toDateString() %></span>
+		&raquo;
+		><%- document.contentRendered %> </li>
+	<% end %>
 		</section>
 
 		<!-- Footer -->
