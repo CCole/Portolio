@@ -91,7 +91,7 @@ docpadConfig = {
 			database.findAllLive({tags:$has:'project'}, [date:-1])
             
       
-     
+        
 
 
 
